@@ -1,0 +1,29 @@
+.news.swiper-slide {
+  background-image: url("/images/title image/bank_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news .more::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--color-green);
+  transition: width .3s;
+  z-index:  -1;
+}
+.news .more:hover::before {
+  width: 100%;
+}
+/* Swipper  */
+.swiper-pagination-bullet {
+  background-color: #bcbcbc;
+  width: 17px;
+  height: 17px;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color-orange);
+}
