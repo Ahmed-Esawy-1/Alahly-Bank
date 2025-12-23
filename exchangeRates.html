@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>National Bank of Egypt - Modern Banking</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#00643b", // NBE Green
+              secondary: "#f5821f", // NBE Orange-Gold accent
+              "background-light": "#F9FAFB",
+              "background-dark": "#111827",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1F2937",
+              "border-light": "#E5E7EB",
+              "border-dark": "#374151",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #cbd5e1;
+        border-radius: 20px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background-color: #4b5563;
+      }
+    </style> -->
+  </head>
+  <body
+    class="bg-background-light  text-gray-800 dark:text-gray-200 font-sans transition-colors duration-300 min-h-screen flex flex-col"
+  >
+    <div
+      class="bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark  text-sm hidden lg:block"
+    >
+    <div
+    class="bg-surface-light dark:bg-surface-dark border-b border-gray-200 dark:border-gray-700 text-xs sm:text-sm py-2"
+  >
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-end items-center space-y-2 sm:space-y-0 sm:space-x-6"
+    >
+      <nav
+        class="flex space-x-4 text-text-muted-light dark:text-text-muted-dark"
+      >
+        <a class="hover:text-primary transition-colors" href="#">Homepage</a>
+        <a class="hover:text-primary transition-colors" href="#">About Us</a>
+        <a class="hover:text-primary transition-colors" href="#"
+          >Sustainability</a
+        >
+        <a class="hover:text-primary transition-colors" href="#">Careers</a>
+        <a class="hover:text-primary transition-colors" href="contact.html"
+          >Contact Us</a
+        >
+        <a class="font-bold text-primary" href="#">عربي</a>
+      </nav>
+      <div class="relative w-full sm:w-auto">
+        <input
+          class="bg-gray-100 dark:bg-gray-800 border-none rounded-full py-1 pl-4 pr-10 text-xs focus:ring-2 focus:ring-primary w-full sm:w-48"
+          placeholder="Search"
+          type="text"
+        />
+        <button
+          class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-primary"
+        >
+          <span class="material-icons text-sm">search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <header
+    class="bg-surface-light dark:bg-surface-dark shadow-sm sticky top-0 z-50"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex-shrink-0 flex items-center">
+          <div class="flex items-center gap-2">
+            <div
+              class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg"
+            >
+              N
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="text-primary font-bold text-lg leading-tight uppercase tracking-tight"
+                >National Bank</span
+              >
+              <span
+                class="text-secondary font-semibold text-sm leading-tight uppercase tracking-widest"
+                >Of Egypt</span
+              >
+            </div>
+          </div>
+        </div>
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a
+            class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+            href="#"
+          >
+            <span
+              class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+              >person</span
+            >
+            <span
+              class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+              >Retail</span
+            >
+          </a>
+          <a
+            class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+            href="#"
+          >
+            <span
+              class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+              >apartment</span
+            >
+            <span
+              class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+              >Corporate</span
+            >
+          </a>
+          <a
+            class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+            href="#"
+          >
+            <span
+              class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+              >storefront</span
+            >
+            <span
+              class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+              >SMEs</span
+            >
+          </a>
+          <a
+            class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+            href="#"
+          >
+            <span
+              class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+              >diamond</span
+            >
+            <span
+              class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+              >Platinum</span
+            >
+          </a>
+          <a
+            class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+            href="#"
+          >
+            <span
+              class="material-icons text-primary text-2xl mb-1 group-hover:scale-110 transition-transform"
+              >laptop_mac</span
+            >
+            <span
+              class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+              >Self Services</span
+            >
+          </a>
+        </nav>
+        <div class="md:hidden flex items-center">
+          <button class="text-gray-500 hover:text-primary focus:outline-none">
+            <span class="material-icons text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div
+      class="bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700"
+    >
+      <div class="container mx-auto px-6 py-8">
+        <div class="flex items-center gap-4 mb-2">
+          <div class="bg-primary/10 p-2 rounded-lg">
+            <span class="material-icons-outlined text-primary text-3xl"
+              >currency_exchange</span
+            >
+          </div>
+          <div>
+            <h1 class="text-2xl font-bold text-gray-900 dark:text-white">
+              Exchange Rates And Currency Converter
+            </h1>
+            <nav
+              aria-label="Breadcrumb"
+              class="flex text-sm text-gray-500 dark:text-gray-400 mt-1"
+            >
+              <ol class="inline-flex items-center space-x-1 md:space-x-2">
+                <li class="inline-flex items-center">
+                  <a class="hover:text-primary dark:hover:text-primary" href="/bank/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <span class="material-icons-outlined text-base mx-1"
+                      >chevron_right</span
+                    >
+                    <span class="text-gray-800 dark:text-gray-200"
+                      >Exchange Rates</span
+                    >
+                  </div>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="flex-grow container mx-auto px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="md:col-span-2 space-y-6">
+          <div
+            class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-border-light dark:border-border-dark p-6"
+          >
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="text-lg font-semibold text-gray-800 dark:text-white">
+                Live Exchange Rates
+              </h2>
+              <span
+                class="text-xs text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full"
+                >Updated: Just now</span
+              >
+            </div>
+            <div class="overflow-x-auto">
+              <table
+                class="w-full text-left text-sm text-gray-600 dark:text-gray-300"
+              >
+                <thead
+                  class="bg-gray-50 dark:bg-gray-800 text-xs uppercase font-semibold text-gray-500 dark:text-gray-400"
+                >
+                  <tr>
+                    <th class="px-4 py-3 rounded-l-lg">Currency</th>
+                    <th class="px-4 py-3">Code</th>
+                    <th class="px-4 py-3">Buy</th>
+                    <th class="px-4 py-3 rounded-r-lg">Sell</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100 dark:divide-gray-700">
+                  <tr
+                    class="hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                  >
+                    <td class="px-4 py-4 font-medium flex items-center gap-2">
+                      <img
+                        alt="US Flag"
+                        class="w-6 h-4 object-cover rounded shadow-sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYcUYjNd3lwCO1dgiMZBifspwg5GGKPcMr7RUVBQjnDvAg1hxMIMwFJoYXW-NIeNPGWyfB5F94HXEhV5QfbR7Smo-QubFILA0x8p3fRrttwHQYNhQ_Wqx2uCoejy_lXLB87IXtCw9gbrpNDjC0BOTdpaDwH72xiGFkUDH861zhZSgHXTI2SL00QWdV4-K2HUF7FBG44lhrBSMMFrTD_lCp2Hqy8MH1zd6nCYZd0JFzMSuYWTeiN5rGFl-hXp61Bs5U8tnSa9QVohs"
+                      />
+                      US Dollar
+                    </td>
+                    <td class="px-4 py-4">USD</td>
+                    <td class="px-4 py-4 text-primary font-semibold">48.35</td>
+                    <td class="px-4 py-4 text-red-500 font-semibold">48.45</td>
+                  </tr>
+                  <tr
+                    class="hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                  >
+                    <td class="px-4 py-4 font-medium flex items-center gap-2">
+                      <img
+                        alt="EU Flag"
+                        class="w-6 h-4 object-cover rounded shadow-sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_CxoZ6iSVVnzmqpYdW0XJTjd0H1GJE6FKPgM36pAL-vDRic426_AIIG_6GJyroedqBAOk1QHxwx1A-Nh63TP7FKIPubtUvQICyM3xx3GysDAG7Kj5M3boPhCr-EvzaUIRYhm8xkTPMz1zuwbbgSicqO-r6JOKxmPkA0-SC64_7_eAAWzxYyut6OLpQ5gQKkUT9l7__1LFSDyr1hXqdDS8M4oXpDo6MSfmim3wEoAVl3T3IMWZRUIFV1vTgJdH2oqBbRxh7jymkAY"
+                      />
+                      Euro
+                    </td>
+                    <td class="px-4 py-4">EUR</td>
+                    <td class="px-4 py-4 text-primary font-semibold">52.12</td>
+                    <td class="px-4 py-4 text-red-500 font-semibold">52.38</td>
+                  </tr>
+                  <tr
+                    class="hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                  >
+                    <td class="px-4 py-4 font-medium flex items-center gap-2">
+                      <img
+                        alt="UK Flag"
+                        class="w-6 h-4 object-cover rounded shadow-sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL2Gba2amGl_vQSKQGvK798tnlCkv1XP_7oupRtLuoMFP6-LEBtIHe0Syxjsfflr_30qdHDnN0Bf9_vHMmN6b6_vA_kGtda3wH3SR8DJfFGVSxttaC8vddYcgrVEfPcH-H2nCZgO2YI7Jh0L26ERhaEx6lFAe7xzjWehr2_jJG0PDfwvQqwF2MZfROVYytkfx9cLVaf8fWJbzd2c5kgJaR7GwlxZ5KCC4EV4DbnAx4i4DaN_GmYyNIRFZfK-3Vql47vMI71SXPqO8"
+                      />
+                      Sterling Pound
+                    </td>
+                    <td class="px-4 py-4">GBP</td>
+                    <td class="px-4 py-4 text-primary font-semibold">61.05</td>
+                    <td class="px-4 py-4 text-red-500 font-semibold">61.45</td>
+                  </tr>
+                  <tr
+                    class="hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                  >
+                    <td class="px-4 py-4 font-medium flex items-center gap-2">
+                      <img
+                        alt="SA Flag"
+                        class="w-6 h-4 object-cover rounded shadow-sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-97zeJEJ_J6N06Rt_ImEaFhhCa52j6g2PYjDxEBn-Gj6Xlu9MFR2NRIyvNX1g3vzvSdtV2Sjzyy6CaauY0hLHGCiKPOH7lDJ6rkLSIncxvZzGfTR1n1S4EhYZ9_hC94NqRwzCOIq_Fzb3yVJP6NlT89taLzwyidC34jcdtmX33f7NPFi9IheIvugb6oWKIt3XgVnw3-GtEGFxEtWyYSOYPhK5r93rIPZe00AadpxHOwoMlv8pdghE0PVUrL0qiR3gbGlgNuJRtHM"
+                      />
+                      Saudi Riyal
+                    </td>
+                    <td class="px-4 py-4">SAR</td>
+                    <td class="px-4 py-4 text-primary font-semibold">12.88</td>
+                    <td class="px-4 py-4 text-red-500 font-semibold">12.91</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-1">
+          <div
+            class="bg-primary text-white rounded-xl shadow-lg p-6 relative overflow-hidden"
+          >
+            <div
+              class="absolute -top-10 -right-10 w-32 h-32 bg-white opacity-5 rounded-full blur-2xl"
+            ></div>
+            <div
+              class="absolute -bottom-10 -left-10 w-32 h-32 bg-secondary opacity-20 rounded-full blur-2xl"
+            ></div>
+            <h3 class="text-xl font-bold mb-4 relative z-10">
+              Quick Converter
+            </h3>
+            <div class="space-y-4 relative z-10">
+              <div>
+                <label class="block text-sm text-green-100 mb-1">Amount</label>
+                <input
+                  class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
+                  type="number"
+                  value="100"
+                />
+              </div>
+              <div>
+                <label class="block text-sm text-green-100 mb-1">From</label>
+                <select
+                  class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent [&amp;&gt;option]:text-gray-900"
+                >
+                  <option>USD - US Dollar</option>
+                  <option>EUR - Euro</option>
+                </select>
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
+                >
+                  <span class="material-icons-outlined text-white"
+                    >swap_vert</span
+                  >
+                </button>
+              </div>
+              <div>
+                <label class="block text-sm text-green-100 mb-1">To</label>
+                <select
+                  class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent [&amp;&gt;option]:text-gray-900"
+                >
+                  <option>EGP - Egyptian Pound</option>
+                  <option>SAR - Saudi Riyal</option>
+                </select>
+              </div>
+              <div class="pt-4">
+                <button
+                  class="w-full bg-secondary hover:bg-yellow-600 text-white font-bold py-3 rounded-lg shadow-lg transition-colors"
+                >
+                  Convert Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="bg-surface-light dark:bg-surface-dark pt-12 border-t border-gray-200 dark:border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h4 class="text-secondary font-bold mb-4">I Want To...</h4>
+            <ul
+              class="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Purchase a Certificate</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Apply for a Credit Card</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Apply for a Loan</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Financing P.O.S merchants</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Pay Taxes &amp; University Fees</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-secondary font-bold mb-4">Services</h4>
+            <ul
+              class="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Securities</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >E-Collection of Gov Dues</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Investment Trustees</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Bancassurance</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >NBE Merchant Hub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-secondary font-bold mb-4">Shortcuts</h4>
+            <ul
+              class="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="exchangeRates.html"
+                  >Exchange Rates</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Prizes</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >SMEs</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Fees And Charges</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Electronic Remittances Agents</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-secondary font-bold mb-4">Contact</h4>
+            <div
+              class="space-y-4 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <div>
+                <p class="font-bold text-text-light dark:text-text-dark">
+                  Head Office
+                </p>
+                <p>
+                  NBE Tower, 1187 Corniche El Nile St., Boulak, Cairo, Egypt
+                </p>
+              </div>
+              <div>
+                <p
+                  class="font-bold text-text-light dark:text-text-dark text-secondary"
+                >
+                  Call Us
+                </p>
+                <p>Locally: 19623</p>
+                <p>Internationally: 0020219623</p>
+              </div>
+              <div>
+                <p
+                  class="font-bold text-text-light dark:text-text-dark text-secondary"
+                >
+                  Let's Socialize
+                </p>
+                <div class="flex space-x-3 mt-2">
+                  <a
+                    class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">facebook</span></a
+                  >
+                  <a
+                    class="w-8 h-8 rounded-full bg-pink-600 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">camera_alt</span></a
+                  >
+                  <a
+                    class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">chat</span></a
+                  >
+                  <a
+                    class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">play_arrow</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary py-3 text-center">
+        <p class="text-xs text-white/90">
+          All rights reserved - National Bank Of Egypt © 2024 - V1.0
+        </p>
+      </div>
+    </footer>
+    <div
+      class="fixed right-0 top-1/2 transform -translate-y-1/2 z-50 hidden lg:flex flex-col space-y-1"
+    >
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">facebook</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">camera_alt</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">chat</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">currency_exchange</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-primary text-white flex items-center justify-center hover:bg-green-700 rounded-l-md shadow-lg mt-4 transition-all translate-x-1 hover:translate-x-0 border-l-4 border-yellow-400"
+        href="#"
+      >
+        <span class="material-icons text-sm font-bold">login</span>
+      </a>
+    </div>
+    <div class="fixed bottom-6 right-6 z-50">
+      <button
+        class="w-14 h-14 bg-white dark:bg-gray-800 rounded-full shadow-2xl flex items-center justify-center text-primary border-2 border-primary hover:scale-110 transition-transform"
+      >
+        <span class="material-icons text-3xl">support_agent</span>
+      </button>
+    </div>
+  </body>
+</html>

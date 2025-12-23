@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Customer Service &amp; Offers - NBE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#005a3c", // Dark Green
+              secondary: "#f39c12", // Orange
+              "secondary-light": "#fffaf0", // Light orange bg
+              "background-light": "#f8f9fa",
+              "background-dark": "#121212",
+              "surface-light": "#ffffff",
+              "surface-dark": "#1e1e1e",
+              "text-light": "#333333",
+              "text-dark": "#e0e0e0",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              xl: "1rem",
+              "2xl": "1.5rem",
+            },
+            boxShadow: {
+              card: "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)",
+              "card-hover":
+                "0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-sans antialiased transition-colors duration-300 min-h-screen flex flex-col"
+  >
+    <div
+      class="bg-surface-light dark:bg-surface-dark border-b border-gray-200 dark:border-gray-700 text-xs sm:text-sm py-2"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-end items-center space-y-2 sm:space-y-0 sm:space-x-6"
+      >
+        <nav
+          class="flex space-x-4 text-text-muted-light dark:text-text-muted-dark"
+        >
+          <a class="hover:text-primary transition-colors" href="#">Homepage</a>
+          <a class="hover:text-primary transition-colors" href="#">About Us</a>
+          <a class="hover:text-primary transition-colors" href="#"
+            >Sustainability</a
+          >
+          <a class="hover:text-primary transition-colors" href="#">Careers</a>
+          <a class="hover:text-primary transition-colors" href="contact.html"
+            >Contact Us</a
+          >
+          <a class="font-bold text-primary" href="#">عربي</a>
+        </nav>
+        <div class="relative w-full sm:w-auto">
+          <input
+            class="bg-gray-100 dark:bg-gray-800 border-none rounded-full py-1 pl-4 pr-10 text-xs focus:ring-2 focus:ring-primary w-full sm:w-48"
+            placeholder="Search"
+            type="text"
+          />
+          <button
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-primary"
+          >
+            <span class="material-icons text-sm">search</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <header
+      class="bg-surface-light dark:bg-surface-dark shadow-sm sticky top-0 z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <div class="flex items-center gap-2">
+              <div
+                class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg"
+              >
+                N
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="text-primary font-bold text-lg leading-tight uppercase tracking-tight"
+                  >National Bank</span
+                >
+                <span
+                  class="text-secondary font-semibold text-sm leading-tight uppercase tracking-widest"
+                  >Of Egypt</span
+                >
+              </div>
+            </div>
+          </div>
+          <nav class="hidden md:flex space-x-8 items-center">
+            <a
+              class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+              href="#"
+            >
+              <span
+                class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+                >person</span
+              >
+              <span
+                class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+                >Retail</span
+              >
+            </a>
+            <a
+              class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+              href="#"
+            >
+              <span
+                class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+                >apartment</span
+              >
+              <span
+                class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+                >Corporate</span
+              >
+            </a>
+            <a
+              class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+              href="#"
+            >
+              <span
+                class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+                >storefront</span
+              >
+              <span
+                class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+                >SMEs</span
+              >
+            </a>
+            <a
+              class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+              href="#"
+            >
+              <span
+                class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+                >diamond</span
+              >
+              <span
+                class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+                >Platinum</span
+              >
+            </a>
+            <a
+              class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+              href="#"
+            >
+              <span
+                class="material-icons text-primary text-2xl mb-1 group-hover:scale-110 transition-transform"
+                >laptop_mac</span
+              >
+              <span
+                class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+                >Self Services</span
+              >
+            </a>
+          </nav>
+          <div class="md:hidden flex items-center">
+            <button class="text-gray-500 hover:text-primary focus:outline-none">
+              <span class="material-icons text-3xl">menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      class="flex-grow max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full"
+    >
+      <section
+        class="bg-[#fff6e8] dark:bg-surface-dark rounded-xl shadow-sm border-l-4 border-secondary overflow-hidden mb-16"
+      >
+        <div class="p-8 lg:p-12">
+          <h1
+            class="text-3xl font-bold text-[#cf5918] dark:text-secondary mb-6"
+          >
+            Dear Customer,
+          </h1>
+          <div
+            class="prose dark:prose-invert max-w-none text-[#5c3a1e] dark:text-gray-300 leading-relaxed text-base lg:text-lg"
+          >
+            <p class="mb-4">
+              If you see a message requesting you to update your information
+              while using self-service, we are pleased to welcome you at any NBE
+              branch to update your information, in order to maintain the
+              service(s).
+            </p>
+            <p class="mb-4">
+              Some banking services will be stopped after three months from the
+              date on which you are required to update your information with the
+              Bank. Please note that the Bank does not request any personal or
+              banking information over the phone or via text messages.
+            </p>
+            <div class="mt-6">
+              <span
+                class="font-semibold text-[#cf5918] dark:text-secondary block mb-1"
+              >
+                To find which services will be suspended, please visit the
+                following link:
+              </span>
+              <a
+                class="text-[#cf5918] dark:text-secondary font-bold hover:text-orange-700 underline decoration-2 underline-offset-2 transition-colors"
+                href="#"
+              >
+                "Important Information Update Notice to Customers"
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8"
+      >
+        <div
+          class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full"
+        >
+          <div class="p-8 flex flex-col flex-grow items-center text-center">
+            <div
+              class="w-20 h-20 rounded-full bg-green-50 dark:bg-green-900/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="material-symbols-outlined text-[3rem] text-primary dark:text-green-400"
+                >calendar_month</span
+              >
+            </div>
+            <h3
+              class="text-lg font-bold text-secondary dark:text-secondary mb-3"
+            >
+              Branch Appointment<br />Booking
+            </h3>
+            <p
+              class="text-gray-500 dark:text-gray-400 text-sm mb-8 leading-relaxed flex-grow"
+            >
+              Schedule your visit to any of our branches in advance.
+            </p>
+            <a
+              class="w-full inline-flex justify-center items-center px-6 py-2.5 text-sm font-semibold rounded-md text-white bg-primary hover:bg-[#00462e] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              href="#"
+            >
+              More
+            </a>
+          </div>
+        </div>
+        <div
+          class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full"
+        >
+          <div class="p-8 flex flex-col flex-grow items-center text-center">
+            <div
+              class="w-20 h-20 rounded-full bg-green-50 dark:bg-green-900/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="material-symbols-outlined text-[3rem] text-primary dark:text-green-400"
+                >payments</span
+              >
+            </div>
+            <h3
+              class="text-lg font-bold text-secondary dark:text-secondary mb-3"
+            >
+              Instant Payment Network<br />(IPN)
+            </h3>
+            <p
+              class="text-gray-500 dark:text-gray-400 text-sm mb-8 leading-relaxed flex-grow"
+            >
+              Instantly transfer funds between different bank accounts.
+            </p>
+            <a
+              class="w-full inline-flex justify-center items-center px-6 py-2.5 text-sm font-semibold rounded-md text-white bg-primary hover:bg-[#00462e] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              href="#"
+            >
+              More
+            </a>
+          </div>
+        </div>
+        <div
+          class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full"
+        >
+          <div class="p-8 flex flex-col flex-grow items-center text-center">
+            <div
+              class="w-20 h-20 rounded-full bg-green-50 dark:bg-green-900/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="material-symbols-outlined text-[3rem] text-primary dark:text-green-400"
+                >handshake</span
+              >
+            </div>
+            <h3
+              class="text-lg font-bold text-secondary dark:text-secondary mb-3"
+            >
+              SME Business<br />Appointment
+            </h3>
+            <p
+              class="text-gray-500 dark:text-gray-400 text-sm mb-8 leading-relaxed flex-grow"
+            >
+              Book a meeting with a Small &amp; Medium Enterprise specialist.
+            </p>
+            <a
+              class="w-full inline-flex justify-center items-center px-6 py-2.5 text-sm font-semibold rounded-md text-white bg-primary hover:bg-[#00462e] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              href="#"
+            >
+              More
+            </a>
+          </div>
+        </div>
+        <div
+          class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full"
+        >
+          <div class="p-8 flex flex-col flex-grow items-center text-center">
+            <div
+              class="w-20 h-20 rounded-full bg-green-50 dark:bg-green-900/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="material-symbols-outlined text-[3rem] text-primary dark:text-green-400"
+                >monetization_on</span
+              >
+            </div>
+            <h3
+              class="text-lg font-bold text-secondary dark:text-secondary mb-3"
+            >
+              Personal Cash<br />Loan
+            </h3>
+            <p
+              class="text-gray-500 dark:text-gray-400 text-sm mb-8 leading-relaxed flex-grow"
+            >
+              Request a personal loan against your Al Ahly Plus certificate.
+            </p>
+            <a
+              class="w-full inline-flex justify-center items-center px-6 py-2.5 text-sm font-semibold rounded-md text-white bg-primary hover:bg-[#00462e] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              href="#"
+            >
+              More
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="bg-surface-light dark:bg-surface-dark pt-12 border-t border-gray-200 dark:border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h4 class="text-secondary font-bold mb-4">I Want To...</h4>
+            <ul
+              class="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Purchase a Certificate</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Apply for a Credit Card</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Apply for a Loan</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Financing P.O.S merchants</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Pay Taxes &amp; University Fees</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-secondary font-bold mb-4">Services</h4>
+            <ul
+              class="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Securities</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >E-Collection of Gov Dues</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Investment Trustees</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Bancassurance</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >NBE Merchant Hub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-secondary font-bold mb-4">Shortcuts</h4>
+            <ul
+              class="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="exchangeRates.html"
+                  >Exchange Rates</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Prizes</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >SMEs</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Fees And Charges</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Electronic Remittances Agents</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-secondary font-bold mb-4">Contact</h4>
+            <div
+              class="space-y-4 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <div>
+                <p class="font-bold text-text-light dark:text-text-dark">
+                  Head Office
+                </p>
+                <p>
+                  NBE Tower, 1187 Corniche El Nile St., Boulak, Cairo, Egypt
+                </p>
+              </div>
+              <div>
+                <p
+                  class="font-bold text-text-light dark:text-text-dark text-secondary"
+                >
+                  Call Us
+                </p>
+                <p>Locally: 19623</p>
+                <p>Internationally: 0020219623</p>
+              </div>
+              <div>
+                <p
+                  class="font-bold text-text-light dark:text-text-dark text-secondary"
+                >
+                  Let's Socialize
+                </p>
+                <div class="flex space-x-3 mt-2">
+                  <a
+                    class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">facebook</span></a
+                  >
+                  <a
+                    class="w-8 h-8 rounded-full bg-pink-600 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">camera_alt</span></a
+                  >
+                  <a
+                    class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">chat</span></a
+                  >
+                  <a
+                    class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">play_arrow</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary py-3 text-center">
+        <p class="text-xs text-white/90">
+          All rights reserved - National Bank Of Egypt © 2024 - V1.0
+        </p>
+      </div>
+    </footer>
+    <div
+      class="fixed right-0 top-1/2 transform -translate-y-1/2 z-50 hidden lg:flex flex-col space-y-1"
+    >
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">facebook</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">camera_alt</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">chat</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">currency_exchange</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-primary text-white flex items-center justify-center hover:bg-green-700 rounded-l-md shadow-lg mt-4 transition-all translate-x-1 hover:translate-x-0 border-l-4 border-yellow-400"
+        href="#"
+      >
+        <span class="material-icons text-sm font-bold">login</span>
+      </a>
+    </div>
+    <div class="fixed bottom-6 right-6 z-50">
+      <button
+        class="w-14 h-14 bg-white dark:bg-gray-800 rounded-full shadow-2xl flex items-center justify-center text-primary border-2 border-primary hover:scale-110 transition-transform"
+      >
+        <span class="material-icons text-3xl">support_agent</span>
+      </button>
+    </div>
+  </body>
+</html>
