@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us - TrustBank</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#086d3d", 
+              secondary: "#ffa310",
+
+              "background-light": "#f7f7f6",
+              "background-dark": "#1d1a15",
+              "surface-light": "#ffffff",
+              "surface-dark": "#2a2721",
+              "text-main": "#171511",
+              "text-muted": "#847862",
+              "border-light": "#e1ddd6",
+              "border-dark": "#3e3a32",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .custom-select {
+        background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCccazCm9jn9vkC_4zgCBwrldZK934n_2Q42jMX_n8xmn9p2bZ-xV5zqBAt6JJh3iJ-GEqtw1PheMdZD--9L3VES4q_A3zEOVFgTDslADoRkV7fXzsl_Vfx3bUDZxHd0u_7z8aFCUZrNezLUJOJ2dPC5XFPfDznGTQzjut1QhSRe45z4lpmEGvuUg4nGZAhErcHNm3s1rSGz-hOtNFhwsxaj0c8C_mGDwLR-7b_vGx6Fx4pbqQj5Nbp-05KuCIE5stToK2rPOxnyGQ);
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-right: 2.5rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light font-display text-text-main dark:text-gray-100 antialiased overflow-x-hidden transition-colors duration-200"
+  >
+  <div
+  class="bg-surface-light  border-b border-gray-200 dark:border-gray-700 text-xs sm:text-sm py-2"
+>
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-end items-center space-y-2 sm:space-y-0 sm:space-x-6"
+  >
+    <nav
+      class="flex space-x-4 text-text-muted-light dark:text-text-muted-dark"
+    >
+      <a class="hover:text-primary transition-colors" href="#">Homepage</a>
+      <a class="hover:text-primary transition-colors" href="#">About Us</a>
+      <a class="hover:text-primary transition-colors" href="#"
+        >Sustainability</a
+      >
+      <a class="hover:text-primary transition-colors" href="#">Careers</a>
+      <a class="hover:text-primary transition-colors" href="contact.html"
+        >Contact Us</a
+      >
+      <a class="font-bold text-primary" href="#">عربي</a>
+    </nav>
+    <div class="relative w-full sm:w-auto">
+      <input
+        class="bg-gray-100 dark:bg-gray-800 border-none rounded-full py-1 pl-4 pr-10 text-xs focus:ring-2 focus:ring-primary w-full sm:w-48"
+        placeholder="Search"
+        type="text"
+      />
+      <button
+        class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-primary"
+      >
+        <span class="material-icons text-sm">search</span>
+      </button>
+    </div>
+  </div>
+</div>
+<header
+  class="bg-surface-light  shadow-sm sticky top-0 z-50"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-20 items-center">
+      <div class="flex-shrink-0 flex items-center">
+        <div class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg"
+          >
+            N
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="text-primary font-bold text-lg leading-tight uppercase tracking-tight"
+              >National Bank</span
+            >
+            <span
+              class="text-secondary font-semibold text-sm leading-tight uppercase tracking-widest"
+              >Of Egypt</span
+            >
+          </div>
+        </div>
+      </div>
+      <nav class="hidden md:flex space-x-8 items-center">
+        <a
+          class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+          href="#"
+        >
+          <span
+            class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+            >person</span
+          >
+          <span
+            class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+            >Retail</span
+          >
+        </a>
+        <a
+          class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+          href="#"
+        >
+          <span
+            class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+            >apartment</span
+          >
+          <span
+            class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+            >Corporate</span
+          >
+        </a>
+        <a
+          class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+          href="#"
+        >
+          <span
+            class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+            >storefront</span
+          >
+          <span
+            class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+            >SMEs</span
+          >
+        </a>
+        <a
+          class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+          href="#"
+        >
+          <span
+            class="material-icons text-secondary text-2xl mb-1 group-hover:scale-110 transition-transform"
+            >diamond</span
+          >
+          <span
+            class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+            >Platinum</span
+          >
+        </a>
+        <a
+          class="group flex flex-col items-center text-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+          href="#"
+        >
+          <span
+            class="material-icons text-primary text-2xl mb-1 group-hover:scale-110 transition-transform"
+            >laptop_mac</span
+          >
+          <span
+            class="text-sm font-medium text-text-light dark:text-text-dark group-hover:text-primary"
+            >Self Services</span
+          >
+        </a>
+      </nav>
+      <div class="md:hidden flex items-center">
+        <button class="text-gray-500 hover:text-primary focus:outline-none">
+          <span class="material-icons text-3xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+    <main class="flex-grow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+        <div class="mb-10 text-center md:text-left">
+          <h1
+            class="text-4xl md:text-5xl font-black tracking-tight text-primary  mb-4"
+          >
+            Contact Support
+          </h1>
+          <p class="text-lg text-text-muted dark:text-gray-400 max-w-2xl">
+            We are here to help. Whether you have a question about your account
+            or need assistance with our services, please fill out the form below
+            or reach us directly.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start"
+        >
+          <div class="lg:col-span-4 flex flex-col gap-6">
+            <div
+              class="bg-surface-light  rounded-xl p-6 md:p-8 shadow-sm border border-border-light border-t-4 border-t-primary"
+            >
+              <h3 class="text-xl font-bold mb-6 text-primary ">
+                Get in touch
+              </h3>
+              <div class="flex flex-col gap-8">
+                <div class="flex gap-4 items-start">
+                  <div
+                    class="bg-primary/10  p-2.5 rounded-lg text-primary shrink-0"
+                  >
+                    <span class="material-symbols-outlined">call</span>
+                  </div>
+                  <div>
+                    <p
+                      class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-secondary mb-1"
+                    >
+                      Customer Service
+                    </p>
+                    <p
+                      class="text-base font-semibold text-text-main  hover:text-secondary transition-colors cursor-pointer"
+                    >
+                      +1 (555) 000-0000
+                    </p>
+                    <p
+                      class="text-sm text-text-muted dark:text-gray-400 mt-0.5"
+                    >
+                      Toll-free inside USA
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                  <div
+                    class="bg-primary/10  p-2.5 rounded-lg text-primary shrink-0"
+                  >
+                    <span class="material-symbols-outlined">location_on</span>
+                  </div>
+                  <div>
+                    <p
+                      class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-secondary mb-1"
+                    >
+                      Headquarters
+                    </p>
+                    <p
+                      class="text-base font-semibold text-text-main "
+                    >
+                      123 Bank Street,<br />Financial District, NY 10005
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                  <div
+                    class="bg-primary/10  p-2.5 rounded-lg text-primary shrink-0"
+                  >
+                    <span class="material-symbols-outlined">schedule</span>
+                  </div>
+                  <div>
+                    <p
+                      class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-secondary mb-1"
+                    >
+                      Operating Hours
+                    </p>
+                    <p
+                      class="text-base font-semibold text-text-main "
+                    >
+                      Mon - Fri: 9:00 AM - 5:00 PM
+                    </p>
+                    <p
+                      class="text-sm text-text-muted dark:text-gray-400 mt-0.5"
+                    >
+                      Weekend: Closed
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                  <div
+                    class="bg-primary/10 dark:bg-primary/20 p-2.5 rounded-lg text-primary dark:text-primary shrink-0"
+                  >
+                    <span class="material-symbols-outlined">mail</span>
+                  </div>
+                  <div>
+                    <p
+                      class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-secondary mb-1"
+                    >
+                      Email Us
+                    </p>
+                    <p
+                      class="text-base font-semibold text-text-main  hover:text-secondary transition-colors cursor-pointer"
+                    >
+                      support@trustbank.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-8 h-40 w-full rounded-lg overflow-hidden relative group border border-border-light"
+              >
+                <img
+                  alt="Map view of New York Financial District showing bank location"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-location="New York Financial District"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8JLhoCPJIEQ0DB20y5fMHeeuMIp5WhiefiZm7uXOC8uBcNwWtwIykgkxIhpNLeNkIOjrM6UK-BZ71_YdMX2zqF7zD-rGT8eLZuMSWgtICpPara16F0h5RZZRdADEJsiKzDOIO8MfMj6ytjivRmnBtscXBKT9EoW3o8gMgexvQUOjTRdzOmYid1m5hJnJuzj0vSIY0T6w2OLbslrZajadi-5p85zPiMzpzEyNE0WqPheVCsi8OySVKpMDiB-N9LrdhvLw3a-zEAxY"
+                />
+                <div
+                  class="absolute inset-0 bg-secondary/10 mix-blend-multiply"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-8">
+            <div
+              class="bg-surface-light  rounded-xl p-6 md:p-8 shadow-sm border border-border-light relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full -mr-8 -mt-8 pointer-events-none"
+              ></div>
+              <form class="space-y-6 relative z-10">
+                <div>
+                  <label
+                    class="block text-sm font-semibold text-primary  mb-2"
+                    >Recipient</label
+                  >
+                  <select
+                    class="custom-select w-full rounded-lg border-border-light bg-background-light text-text-main  focus:border-primary focus:ring-primary h-12 text-base px-4"
+                  >
+                    <option disabled="" selected="" value="">
+                      Select Department
+                    </option>
+                    <option value="support">General Support</option>
+                    <option value="accounts">Accounts &amp; Billing</option>
+                    <option value="loans">Loans &amp; Mortgages</option>
+                    <option value="security">Fraud &amp; Security</option>
+                  </select>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="flex flex-col">
+                    <label
+                      class="block text-sm font-semibold text-primary  mb-2"
+                      >Full Name</label
+                    >
+                    <input
+                      class="w-full rounded-lg border-border-light bg-background-light text-text-main  focus:border-primary focus:ring-primary h-12 px-4 placeholder:text-text-muted/60"
+                      placeholder="Enter your full name"
+                      type="text"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                    <label
+                      class="block text-sm font-semibold text-primary  mb-2"
+                      >Email Address</label
+                    >
+                    <input
+                      class="w-full rounded-lg border-border-light bg-background-light text-text-main  focus:border-primary focus:ring-primary h-12 px-4 placeholder:text-text-muted/60"
+                      placeholder="name@example.com"
+                      type="email"
+                    />
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="flex flex-col">
+                    <label
+                      class="block text-sm font-semibold text-primary  mb-2"
+                      >Mobile Number</label
+                    >
+                    <input
+                      class="w-full rounded-lg border-border-light bg-background-light text-text-main  focus:border-primary focus:ring-primary h-12 px-4 placeholder:text-text-muted/60"
+                      placeholder="+1 (555) 000-0000"
+                      type="tel"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                    <label
+                      class="block text-sm font-semibold text-primary  mb-2"
+                      >Fax
+                      <span class="text-text-muted font-normal text-xs ml-1"
+                        >(Optional)</span
+                      ></label
+                    >
+                    <input
+                      class="w-full rounded-lg border-border-light bg-background-light text-text-main  focus:border-primary focus:ring-primary h-12 px-4 placeholder:text-text-muted/60"
+                      placeholder="Optional"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    class="block text-sm font-semibold text-primary  mb-2"
+                    >Question Type</label
+                  >
+                  <select
+                    class="custom-select w-full rounded-lg border-border-light bg-background-light text-text-main  focus:border-primary focus:ring-primary h-12 text-base px-4"
+                  >
+                    <option disabled="" selected="" value="">
+                      How can we help you?
+                    </option>
+                    <option value="inquiry">General Inquiry</option>
+                    <option value="tech">Technical Issue</option>
+                    <option value="feedback">Feedback / Suggestion</option>
+                    <option value="complaint">File a Complaint</option>
+                  </select>
+                </div>
+                <div>
+                  <label
+                    class="block text-sm font-semibold text-primary  mb-2"
+                    >Your Message</label
+                  >
+                  <textarea
+                    class="w-full rounded-lg border-border-light bg-background-light text-text-main  focus:border-primary focus:ring-primary p-4 resize-y placeholder:text-text-muted/60"
+                    placeholder="Please provide details about your inquiry..."
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div>
+                  <label
+                    class="block text-sm font-semibold text-primary  mb-2"
+                    >Security Verification</label
+                  >
+                  <div
+                    class="flex flex-col sm:flex-row gap-4 items-start sm:items-center"
+                  >
+                    <div
+                      class="relative overflow-hidden bg-white rounded border border-border-light select-none w-40 h-12 flex items-center justify-center bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"
+                    >
+                      <div
+                        class="absolute inset-0 bg-secondary/10 opacity-50"
+                      ></div>
+                      <span
+                        class="relative z-10 font-mono text-2xl font-bold tracking-[0.2em] text-primary line-through decoration-secondary decoration-2"
+                        style="transform: skewX(-10deg)"
+                        >x7K9m</span
+                      >
+                    </div>
+                    <button
+                      class="text-text-muted hover:text-secondary dark:text-gray-400 dark:hover:text-secondary transition-colors"
+                      title="Reload Image"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined">refresh</span>
+                    </button>
+                    <input
+                      class="flex-1 w-full rounded-lg border-border-light bg-background-light text-text-main  focus:border-primary focus:ring-primary h-12 px-4 placeholder:text-text-muted/60"
+                      placeholder="Enter code"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <p class="text-xs text-text-muted dark:text-gray-500 mt-2">
+                  By submitting this form, you acknowledge that you have read
+                  and agreed to our
+                  <a
+                    class="underline hover:text-secondary text-secondary"
+                    href="#"
+                    >Privacy Policy</a
+                  >
+                  and
+                  <a
+                    class="underline hover:text-secondary text-secondary"
+                    href="#"
+                    >Terms of Service</a
+                  >.
+                </p>
+                <div class="pt-2">
+                  <button
+                    class="w-full sm:w-auto px-8 py-3 bg-secondary hover:bg-secondary-dark text-white font-bold rounded-lg shadow-sm transition-all transform active:scale-95 flex items-center justify-center gap-2 border-b-4 border-secondary-dark"
+                    type="button"
+                  >
+                    <span>Send</span>
+                    <span class="material-symbols-outlined text-lg"
+                      >arrow_forward</span
+                    >
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="bg-surface-light  pt-12 border-t border-gray-200 dark:border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h4 class="text-secondary font-bold mb-4">I Want To...</h4>
+            <ul
+              class="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Purchase a Certificate</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Apply for a Credit Card</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Apply for a Loan</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Financing P.O.S merchants</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Pay Taxes &amp; University Fees</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-secondary font-bold mb-4">Services</h4>
+            <ul
+              class="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Securities</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >E-Collection of Gov Dues</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Investment Trustees</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Bancassurance</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >NBE Merchant Hub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-secondary font-bold mb-4">Shortcuts</h4>
+            <ul
+              class="space-y-2 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="exchangeRates.html"
+                  >Exchange Rates</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Prizes</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >SMEs</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Fees And Charges</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Electronic Remittances Agents</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-secondary font-bold mb-4">Contact</h4>
+            <div
+              class="space-y-4 text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              <div>
+                <p class="font-bold text-text-light dark:text-text-dark">
+                  Head Office
+                </p>
+                <p>
+                  NBE Tower, 1187 Corniche El Nile St., Boulak, Cairo, Egypt
+                </p>
+              </div>
+              <div>
+                <p
+                  class="font-bold text-text-light dark:text-text-dark text-secondary"
+                >
+                  Call Us
+                </p>
+                <p>Locally: 19623</p>
+                <p>Internationally: 0020219623</p>
+              </div>
+              <div>
+                <p
+                  class="font-bold text-text-light dark:text-text-dark text-secondary"
+                >
+                  Let's Socialize
+                </p>
+                <div class="flex space-x-3 mt-2">
+                  <a
+                    class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">facebook</span></a
+                  >
+                  <a
+                    class="w-8 h-8 rounded-full bg-pink-600 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">camera_alt</span></a
+                  >
+                  <a
+                    class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">chat</span></a
+                  >
+                  <a
+                    class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white hover:opacity-80"
+                    href="#"
+                    ><span class="material-icons text-sm">play_arrow</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary py-3 text-center">
+        <p class="text-xs text-white/90">
+          All rights reserved - National Bank Of Egypt © 2024 - V1.0
+        </p>
+      </div>
+    </footer>
+    <div
+      class="fixed right-0 top-1/2 transform -translate-y-1/2 z-50 hidden lg:flex flex-col space-y-1"
+    >
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">facebook</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">camera_alt</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">chat</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-secondary text-white flex items-center justify-center hover:bg-orange-600 rounded-l-md shadow-lg transition-all translate-x-1 hover:translate-x-0"
+        href="#"
+      >
+        <span class="material-icons">currency_exchange</span>
+      </a>
+      <a
+        class="w-12 h-12 bg-primary text-white flex items-center justify-center hover:bg-green-700 rounded-l-md shadow-lg mt-4 transition-all translate-x-1 hover:translate-x-0 border-l-4 border-yellow-400"
+        href="#"
+      >
+        <span class="material-icons text-sm font-bold">login</span>
+      </a>
+    </div>
+    <div class="fixed bottom-6 right-6 z-50">
+      <button
+        class="w-14 h-14 bg-white dark:bg-gray-800 rounded-full shadow-2xl flex items-center justify-center text-primary border-2 border-primary hover:scale-110 transition-transform"
+      >
+        <span class="material-icons text-3xl">support_agent</span>
+      </button>
+    </div>
+  </body>
+</html>
